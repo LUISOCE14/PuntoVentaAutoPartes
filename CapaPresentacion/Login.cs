@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegocio;
+using CapaEntidad;
 
 namespace CapaPresentacion
 {
@@ -19,10 +21,10 @@ namespace CapaPresentacion
 
         private void btningresar_Click(object sender, EventArgs e)
         {
-            //Empleado oempleado = new CN_Empleado().Listar().Where(u => u.IdEmpleado == Convert.ToInt32(txtusuario.Text)).FirstOrDefault();
-            if (Convert.ToInt32(txtusuario.Text) == 1)
+            Empleado oempleado = new CN_Empleado().Listar().Where(u => u.IdEmpleado == Convert.ToInt32(txtusuario.Text)).FirstOrDefault();
+            if (oempleado != null)
             {
-                Inicio form = new Inicio();
+                Inicio form = new Inicio(oempleado);
                 form.Show();
                 this.Hide();
                 form.FormClosing += frm_closing;
@@ -48,10 +50,10 @@ namespace CapaPresentacion
         {
             if (e.KeyData == Keys.Enter)
             {
-                //Empleado oempleado = new CN_Empleado().Listar().Where(u => u.IdEmpleado == Convert.ToInt32(txtusuario.Text)).FirstOrDefault();
-                if (Convert.ToInt32(txtusuario.Text) == 1)
+                Empleado oempleado = new CN_Empleado().Listar().Where(u => u.IdEmpleado == Convert.ToInt32(txtusuario.Text)).FirstOrDefault();
+                if (oempleado != null)
                 {
-                    Inicio form = new Inicio();
+                    Inicio form = new Inicio(oempleado);
                     form.Show();
                     this.Hide();
                     form.FormClosing += frm_closing;

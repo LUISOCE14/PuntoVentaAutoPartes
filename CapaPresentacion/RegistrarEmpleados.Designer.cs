@@ -78,7 +78,7 @@ namespace CapaPresentacion
             this.registrar.IconColor = System.Drawing.Color.Black;
             this.registrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.registrar.IconSize = 20;
-            this.registrar.Location = new System.Drawing.Point(251, 340);
+            this.registrar.Location = new System.Drawing.Point(253, 289);
             this.registrar.Name = "registrar";
             this.registrar.Size = new System.Drawing.Size(191, 37);
             this.registrar.TabIndex = 97;
@@ -86,6 +86,7 @@ namespace CapaPresentacion
             this.registrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.registrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.registrar.UseVisualStyleBackColor = false;
+            this.registrar.Click += new System.EventHandler(this.registrar_Click);
             // 
             // label8
             // 
@@ -158,6 +159,7 @@ namespace CapaPresentacion
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistrarEmpleados";
             this.Text = "RegistrarEmpleados";
+            this.Load += new System.EventHandler(this.RegistrarEmpleados_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

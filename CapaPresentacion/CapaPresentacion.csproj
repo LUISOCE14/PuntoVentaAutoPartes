@@ -53,6 +53,30 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsultarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarClientes.Designer.cs">
+      <DependentUpon>ConsultarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarEmpleados.Designer.cs">
+      <DependentUpon>ConsultarEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarProductos.Designer.cs">
+      <DependentUpon>ConsultarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarVentas.Designer.cs">
+      <DependentUpon>ConsultarVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +109,25 @@
     <Compile Include="RegistrarProductos.Designer.cs">
       <DependentUpon>RegistrarProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistrarVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarVentas.Designer.cs">
+      <DependentUpon>RegistrarVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilidades\OpcionesCombo.cs" />
+    <EmbeddedResource Include="ConsultarClientes.resx">
+      <DependentUpon>ConsultarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarEmpleados.resx">
+      <DependentUpon>ConsultarEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarProductos.resx">
+      <DependentUpon>ConsultarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarVentas.resx">
+      <DependentUpon>ConsultarVentas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +142,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RegistrarClientes.resx">
       <DependentUpon>RegistrarClientes.cs</DependentUpon>
@@ -108,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RegistrarProductos.resx">
       <DependentUpon>RegistrarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarVentas.resx">
+      <DependentUpon>RegistrarVentas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -132,6 +179,12 @@
       <Project>{858f27e0-ffc2-4872-a80a-185d05be02d1}</Project>
       <Name>CapaNegocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seleccionar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

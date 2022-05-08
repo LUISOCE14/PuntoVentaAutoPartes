@@ -42,7 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="CD_Cliente.cs" />
+    <Compile Include="CD_Empleado.cs" />
+    <Compile Include="CD_Producto.cs" />
+    <Compile Include="CD_Venta.cs" />
+    <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

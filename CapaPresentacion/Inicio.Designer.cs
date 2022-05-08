@@ -89,6 +89,7 @@ namespace CapaPresentacion
             this.iconPictureBox1.Size = new System.Drawing.Size(115, 116);
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
+            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
             // 
             // consultarEmpleados
             // 
@@ -98,6 +99,7 @@ namespace CapaPresentacion
             this.consultarEmpleados.Name = "consultarEmpleados";
             this.consultarEmpleados.Size = new System.Drawing.Size(232, 26);
             this.consultarEmpleados.Text = "Consultar Empleados";
+            this.consultarEmpleados.Click += new System.EventHandler(this.consultarEmpleados_Click);
             // 
             // registrarEmpleados
             // 
@@ -108,6 +110,7 @@ namespace CapaPresentacion
             this.registrarEmpleados.Name = "registrarEmpleados";
             this.registrarEmpleados.Size = new System.Drawing.Size(232, 26);
             this.registrarEmpleados.Text = "Registrar Empleados";
+            this.registrarEmpleados.Click += new System.EventHandler(this.registrarEmpleados_Click);
             // 
             // MenuEmpleados
             // 
@@ -132,6 +135,7 @@ namespace CapaPresentacion
             this.ConsultarProductos.Name = "ConsultarProductos";
             this.ConsultarProductos.Size = new System.Drawing.Size(224, 26);
             this.ConsultarProductos.Text = "Consultar Productos";
+            this.ConsultarProductos.Click += new System.EventHandler(this.ConsultarProductos_Click);
             // 
             // registrarProducto
             // 
@@ -142,6 +146,7 @@ namespace CapaPresentacion
             this.registrarProducto.Name = "registrarProducto";
             this.registrarProducto.Size = new System.Drawing.Size(224, 26);
             this.registrarProducto.Text = "Registrar Producto";
+            this.registrarProducto.Click += new System.EventHandler(this.registrarProducto_Click);
             // 
             // MenuMantenedor
             // 
@@ -208,8 +213,9 @@ namespace CapaPresentacion
             this.registrarVenta.IconColor = System.Drawing.Color.Black;
             this.registrarVenta.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.registrarVenta.Name = "registrarVenta";
-            this.registrarVenta.Size = new System.Drawing.Size(195, 26);
+            this.registrarVenta.Size = new System.Drawing.Size(224, 26);
             this.registrarVenta.Text = "Registrar Venta";
+            this.registrarVenta.Click += new System.EventHandler(this.registrarVenta_Click);
             // 
             // MenuVentas
             // 
@@ -232,8 +238,9 @@ namespace CapaPresentacion
             this.consultarVenta.IconColor = System.Drawing.Color.Black;
             this.consultarVenta.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.consultarVenta.Name = "consultarVenta";
-            this.consultarVenta.Size = new System.Drawing.Size(195, 26);
+            this.consultarVenta.Size = new System.Drawing.Size(224, 26);
             this.consultarVenta.Text = "Consultar Venta";
+            this.consultarVenta.Click += new System.EventHandler(this.consultarVenta_Click);
             // 
             // consultarClientes
             // 
@@ -243,6 +250,7 @@ namespace CapaPresentacion
             this.consultarClientes.Name = "consultarClientes";
             this.consultarClientes.Size = new System.Drawing.Size(210, 26);
             this.consultarClientes.Text = "Consultar Clientes";
+            this.consultarClientes.Click += new System.EventHandler(this.consultarClientes_Click);
             // 
             // RegistrarClientes
             // 
@@ -253,6 +261,7 @@ namespace CapaPresentacion
             this.RegistrarClientes.Name = "RegistrarClientes";
             this.RegistrarClientes.Size = new System.Drawing.Size(210, 26);
             this.RegistrarClientes.Text = "Registrar Clientes";
+            this.RegistrarClientes.Click += new System.EventHandler(this.RegistrarClientes_Click);
             // 
             // menuClientes
             // 
@@ -344,6 +353,7 @@ namespace CapaPresentacion
             this.btnsalir.Text = "   Cerrar Sesion";
             this.btnsalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnsalir.UseVisualStyleBackColor = false;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
             // panel3
             // 
@@ -370,9 +380,9 @@ namespace CapaPresentacion
             // Contenedor
             // 
             this.Contenedor.BackColor = System.Drawing.SystemColors.Control;
-            this.Contenedor.Location = new System.Drawing.Point(281, 100);
+            this.Contenedor.Location = new System.Drawing.Point(281, 97);
             this.Contenedor.Name = "Contenedor";
-            this.Contenedor.Size = new System.Drawing.Size(1249, 632);
+            this.Contenedor.Size = new System.Drawing.Size(1249, 635);
             this.Contenedor.TabIndex = 5;
             // 
             // Inicio
@@ -387,6 +397,7 @@ namespace CapaPresentacion
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.Inicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

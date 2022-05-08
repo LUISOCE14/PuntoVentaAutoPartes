@@ -77,6 +77,7 @@ namespace CapaPresentacion
             this.registrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.registrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.registrar.UseVisualStyleBackColor = false;
+            this.registrar.Click += new System.EventHandler(this.registrar_Click);
             // 
             // label8
             // 

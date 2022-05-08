@@ -143,6 +143,7 @@ namespace CapaPresentacion
             this.registrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.registrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.registrar.UseVisualStyleBackColor = false;
+            this.registrar.Click += new System.EventHandler(this.registrar_Click);
             // 
             // label8
             // 
@@ -206,6 +207,7 @@ namespace CapaPresentacion
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistrarProductos";
             this.Text = "RegistrarProductos";
+            this.Load += new System.EventHandler(this.RegistrarProductos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
