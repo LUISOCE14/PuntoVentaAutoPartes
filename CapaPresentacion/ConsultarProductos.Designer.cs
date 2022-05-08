@@ -29,8 +29,8 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Exis = new System.Windows.Forms.TextBox();
             this.ModeloP = new System.Windows.Forms.TextBox();
             this.valorCompraPr = new System.Windows.Forms.TextBox();
@@ -38,8 +38,6 @@ namespace CapaPresentacion
             this.EditarProd = new FontAwesome.Sharp.IconButton();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtindice = new System.Windows.Forms.TextBox();
-            this.ValorVentaPr = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.DescripcionProd = new System.Windows.Forms.TextBox();
             this.nombreProducto = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,10 +50,6 @@ namespace CapaPresentacion
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.DatosProd = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.btnSelecccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,6 +59,10 @@ namespace CapaPresentacion
             this.ValorCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Existencias = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DatosProd)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +70,7 @@ namespace CapaPresentacion
             // 
             this.Exis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Exis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.Exis.Location = new System.Drawing.Point(36, 452);
+            this.Exis.Location = new System.Drawing.Point(33, 389);
             this.Exis.Name = "Exis";
             this.Exis.Size = new System.Drawing.Size(232, 27);
             this.Exis.TabIndex = 257;
@@ -91,7 +89,7 @@ namespace CapaPresentacion
             // 
             this.valorCompraPr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.valorCompraPr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valorCompraPr.Location = new System.Drawing.Point(35, 384);
+            this.valorCompraPr.Location = new System.Drawing.Point(32, 321);
             this.valorCompraPr.Name = "valorCompraPr";
             this.valorCompraPr.Size = new System.Drawing.Size(233, 27);
             this.valorCompraPr.TabIndex = 255;
@@ -101,7 +99,7 @@ namespace CapaPresentacion
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(32, 364);
+            this.label6.Location = new System.Drawing.Point(29, 301);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(137, 20);
             this.label6.TabIndex = 254;
@@ -116,7 +114,7 @@ namespace CapaPresentacion
             this.EditarProd.IconColor = System.Drawing.Color.Black;
             this.EditarProd.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.EditarProd.IconSize = 15;
-            this.EditarProd.Location = new System.Drawing.Point(67, 522);
+            this.EditarProd.Location = new System.Drawing.Point(56, 455);
             this.EditarProd.Name = "EditarProd";
             this.EditarProd.Size = new System.Drawing.Size(173, 47);
             this.EditarProd.TabIndex = 253;
@@ -145,26 +143,6 @@ namespace CapaPresentacion
             this.txtindice.Size = new System.Drawing.Size(33, 22);
             this.txtindice.TabIndex = 251;
             this.txtindice.Visible = false;
-            // 
-            // ValorVentaPr
-            // 
-            this.ValorVentaPr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ValorVentaPr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ValorVentaPr.Location = new System.Drawing.Point(33, 316);
-            this.ValorVentaPr.Name = "ValorVentaPr";
-            this.ValorVentaPr.Size = new System.Drawing.Size(233, 27);
-            this.ValorVentaPr.TabIndex = 250;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 296);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 20);
-            this.label3.TabIndex = 249;
-            this.label3.Text = "Valor de Venta:";
             // 
             // DescripcionProd
             // 
@@ -297,15 +275,15 @@ namespace CapaPresentacion
             // 
             this.DatosProd.AllowUserToAddRows = false;
             this.DatosProd.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DatosProd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DatosProd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.DatosProd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DatosProd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSelecccionar,
@@ -322,54 +300,14 @@ namespace CapaPresentacion
             this.DatosProd.Name = "DatosProd";
             this.DatosProd.ReadOnly = true;
             this.DatosProd.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            this.DatosProd.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.DatosProd.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DatosProd.RowTemplate.Height = 28;
             this.DatosProd.Size = new System.Drawing.Size(905, 399);
             this.DatosProd.TabIndex = 237;
             this.DatosProd.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DatosProd_CellContentClick);
             this.DatosProd.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DatosProd_CellPainting);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label2.Location = new System.Drawing.Point(13, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(206, 25);
-            this.label2.TabIndex = 236;
-            this.label2.Text = "Detalles del Productos";
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label10.Location = new System.Drawing.Point(0, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(317, 632);
-            this.label10.TabIndex = 235;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(6, -11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(234, 605);
-            this.label1.TabIndex = 234;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(32, 429);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(100, 20);
-            this.label11.TabIndex = 258;
-            this.label11.Text = "Existencias:";
             // 
             // btnSelecccionar
             // 
@@ -445,6 +383,46 @@ namespace CapaPresentacion
             this.btnEliminar.ReadOnly = true;
             this.btnEliminar.Width = 30;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.label2.Location = new System.Drawing.Point(13, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(206, 25);
+            this.label2.TabIndex = 236;
+            this.label2.Text = "Detalles del Productos";
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label10.Location = new System.Drawing.Point(0, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(317, 632);
+            this.label10.TabIndex = 235;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(6, -11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(234, 605);
+            this.label1.TabIndex = 234;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(29, 366);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(100, 20);
+            this.label11.TabIndex = 258;
+            this.label11.Text = "Existencias:";
+            // 
             // ConsultarProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -458,8 +436,6 @@ namespace CapaPresentacion
             this.Controls.Add(this.EditarProd);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtindice);
-            this.Controls.Add(this.ValorVentaPr);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.DescripcionProd);
             this.Controls.Add(this.nombreProducto);
             this.Controls.Add(this.label4);
@@ -494,8 +470,6 @@ namespace CapaPresentacion
         private FontAwesome.Sharp.IconButton EditarProd;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtindice;
-        private System.Windows.Forms.TextBox ValorVentaPr;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox DescripcionProd;
         private System.Windows.Forms.TextBox nombreProducto;
         private System.Windows.Forms.Label label4;

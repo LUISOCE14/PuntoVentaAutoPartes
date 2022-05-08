@@ -30,26 +30,13 @@ namespace CapaPresentacion
             nombreProducto.Text = " ";
             Modelo.Text = " ";
             DescrProducto.Text = " ";
-            VentaProducto.Text = " ";
+
             ValorCompra.Text = " ";
         }
 
         private void registrar_Click(object sender, EventArgs e)
         {
             int band = 0;
-            if (int.TryParse(VentaProducto.Text, out int ejem))
-            {
-
-            }
-            else if (VentaProducto.Text == "")
-            {
-                VentaProducto.Text = Convert.ToDecimal(0).ToString();
-            }
-            else
-            {
-                MessageBox.Show("Solo se aceptan numeros en el campo de valor de venta");
-                band = 1;
-            }
             if (int.TryParse(ValorCompra.Text, out int ejemp))
             {
 
@@ -76,7 +63,6 @@ namespace CapaPresentacion
                     nombre = nombreProducto.Text,
                     modelo = Modelo.Text,
                     descripcion = DescrProducto.Text,
-                    valorVenta = Convert.ToDecimal(VentaProducto.Text),
                     valorCompra = Convert.ToDecimal(ValorCompra.Text),
                     existencias = 0
                 };
@@ -92,6 +78,16 @@ namespace CapaPresentacion
                     MessageBox.Show("Registro Exitoso");
                 }
             }
+        }
+
+        private void VentaProducto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -90,7 +90,6 @@ namespace CapaPresentacion
             DescripcionProd.Text = " ";
             nombreProducto.Text = " ";
             ModeloP.Text = " ";
-            ValorVentaPr.Text = " ";
             valorCompraPr.Text = "";
             Exis.Text = "";
         }
@@ -109,7 +108,6 @@ namespace CapaPresentacion
                     nombreProducto.Text = DatosProd.Rows[indice].Cells["nombre"].Value.ToString();
                     ModeloP.Text = DatosProd.Rows[indice].Cells["Modelo"].Value.ToString();
                     DescripcionProd.Text = DatosProd.Rows[indice].Cells["Descripcion"].Value.ToString();
-                    ValorVentaPr.Text = DatosProd.Rows[indice].Cells["valorVenta"].Value.ToString();
                     valorCompraPr.Text = DatosProd.Rows[indice].Cells["valorCompra"].Value.ToString();
                     Exis.Text = DatosProd.Rows[indice].Cells["Existencias"].Value.ToString();
                 }
@@ -183,13 +181,13 @@ namespace CapaPresentacion
         {
             //Editar Productos
             string mensaje = string.Empty;
+            
             Producto objProd = new Producto()
             {
                 idProducto = Convert.ToInt32(txtId.Text),
                 nombre = nombreProducto.Text,
                 modelo = ModeloP.Text,
                 descripcion = DescripcionProd.Text,
-                valorVenta = Convert.ToDecimal(ValorVentaPr.Text),
                 valorCompra = Convert.ToDecimal(valorCompraPr.Text),
                 existencias = Convert.ToInt32(Exis.Text),
             };
@@ -201,12 +199,14 @@ namespace CapaPresentacion
             }
             else
             {
+                decimal precio = Convert.ToDecimal(valorCompraPr.Text);
+                
                 DataGridViewRow rows = DatosProd.Rows[Convert.ToInt32(txtindice.Text)];
                 rows.Cells["ID"].Value = txtId.Text;
                 rows.Cells["nombre"].Value = nombreProducto.Text;
                 rows.Cells["Modelo"].Value = ModeloP.Text;
                 rows.Cells["Descripcion"].Value = DescripcionProd.Text;
-                rows.Cells["valorVenta"].Value = ValorVentaPr.Text;
+                rows.Cells["valorVenta"].Value =  (double)precio +(double)precio* .20 ;
                 rows.Cells["valorCompra"].Value = valorCompraPr.Text;
                 rows.Cells["Existencias"].Value = Exis.Text;
                 limpiarBoxes();

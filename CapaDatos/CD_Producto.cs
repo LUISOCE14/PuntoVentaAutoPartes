@@ -109,7 +109,6 @@ namespace CapaDatos
                     cmd.Parameters.AddWithValue("NombreProducto", obj.nombre);
                     cmd.Parameters.AddWithValue("Modelo", obj.modelo);
                     cmd.Parameters.AddWithValue("Descripcion", obj.descripcion);
-                    cmd.Parameters.AddWithValue("ValorVenta", obj.valorVenta);
                     cmd.Parameters.AddWithValue("ValorCompra", obj.valorCompra);
                     cmd.Parameters.Add("Resultado", SqlDbType.Int).Direction = ParameterDirection.Output;
                     cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;
@@ -152,7 +151,6 @@ namespace CapaDatos
                     cmd.Parameters.AddWithValue("Modelo", obj.modelo);
                     cmd.Parameters.AddWithValue("Descripcion", obj.descripcion);
                     cmd.Parameters.AddWithValue("ValorCompra", obj.valorCompra);
-                    cmd.Parameters.AddWithValue("ValorVenta", obj.valorVenta);
                     cmd.Parameters.AddWithValue("Existencias", obj.existencias);
                     cmd.Parameters.Add("Resultado", SqlDbType.Int).Direction = ParameterDirection.Output;
                     cmd.Parameters.Add("Mensaje", SqlDbType.VarChar, 500).Direction = ParameterDirection.Output;

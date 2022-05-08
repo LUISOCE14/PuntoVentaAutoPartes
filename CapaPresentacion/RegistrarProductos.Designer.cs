@@ -33,8 +33,6 @@ namespace CapaPresentacion
             this.ValorCompra = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Modelo = new System.Windows.Forms.TextBox();
-            this.VentaProducto = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.nombreProducto = new System.Windows.Forms.TextBox();
             this.registrar = new FontAwesome.Sharp.IconButton();
             this.label8 = new System.Windows.Forms.Label();
@@ -51,8 +49,6 @@ namespace CapaPresentacion
             this.groupBox1.Controls.Add(this.ValorCompra);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.Modelo);
-            this.groupBox1.Controls.Add(this.VentaProducto);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.nombreProducto);
             this.groupBox1.Controls.Add(this.registrar);
             this.groupBox1.Controls.Add(this.label8);
@@ -72,7 +68,7 @@ namespace CapaPresentacion
             // 
             this.ValorCompra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ValorCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ValorCompra.Location = new System.Drawing.Point(193, 287);
+            this.ValorCompra.Location = new System.Drawing.Point(193, 244);
             this.ValorCompra.Name = "ValorCompra";
             this.ValorCompra.Size = new System.Drawing.Size(285, 30);
             this.ValorCompra.TabIndex = 121;
@@ -82,7 +78,7 @@ namespace CapaPresentacion
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.Control;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(62, 294);
+            this.label5.Location = new System.Drawing.Point(62, 251);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(125, 20);
             this.label5.TabIndex = 120;
@@ -96,26 +92,6 @@ namespace CapaPresentacion
             this.Modelo.Name = "Modelo";
             this.Modelo.Size = new System.Drawing.Size(285, 30);
             this.Modelo.TabIndex = 119;
-            // 
-            // VentaProducto
-            // 
-            this.VentaProducto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.VentaProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.VentaProducto.Location = new System.Drawing.Point(193, 237);
-            this.VentaProducto.Name = "VentaProducto";
-            this.VentaProducto.Size = new System.Drawing.Size(285, 30);
-            this.VentaProducto.TabIndex = 99;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Control;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(78, 242);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 20);
-            this.label2.TabIndex = 98;
-            this.label2.Text = "Valor de venta:";
             // 
             // nombreProducto
             // 
@@ -135,7 +111,7 @@ namespace CapaPresentacion
             this.registrar.IconColor = System.Drawing.Color.Black;
             this.registrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.registrar.IconSize = 20;
-            this.registrar.Location = new System.Drawing.Point(236, 359);
+            this.registrar.Location = new System.Drawing.Point(234, 303);
             this.registrar.Name = "registrar";
             this.registrar.Size = new System.Drawing.Size(193, 37);
             this.registrar.TabIndex = 97;
@@ -220,8 +196,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.TextBox ValorCompra;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox Modelo;
-        private System.Windows.Forms.TextBox VentaProducto;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox nombreProducto;
         private FontAwesome.Sharp.IconButton registrar;
         private System.Windows.Forms.Label label8;
